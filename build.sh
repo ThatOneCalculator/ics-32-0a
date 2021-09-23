@@ -1,4 +1,8 @@
-for VARIABLE in ./one.rs ./two.rs ./three.rs #./four.rs ./five.rs ./six.rs ./seven.rs ./eight.rs
+for SRC in ./*.rs
 do
-	rustc $VARIABLE --out-dir target
+	rustc $SRC --out-dir target
+done
+for BIN in ./target/*
+do
+	$BIN
 done
