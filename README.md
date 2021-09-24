@@ -1,0 +1,1 @@
+All programs written in Rust, labeled as 1.rs to 8.rs. build.sh targets Linux.

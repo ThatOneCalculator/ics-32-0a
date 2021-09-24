@@ -5,7 +5,7 @@ fn main() {
 	std::io::stdin().read_line(&mut name).unwrap();
 	println!("Enter your age:");
 	std::io::stdin().read_line(&mut age).unwrap();
-	let int_age = age.trim().parse::<i32>().unwrap();
+	let int_age = age.trim().parse::<usize>().unwrap();
 	let years = if int_age == 1 { "year" } else { "years" };
 	println!("Your name is {} and you are {} {} old.", name.trim(), age.trim(), years);
 }

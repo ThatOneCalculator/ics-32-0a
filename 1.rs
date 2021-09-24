@@ -10,5 +10,5 @@ fn main() {
 	let opposite: f64 = 7.0;
 	let hypotenuse = theorem(adjacent, opposite);
 	let perimiter = adjacent + opposite + hypotenuse;
-	println!("{}", perimiter);
+	println!("{}", perimiter); // should be 20.602325267042627
 }
